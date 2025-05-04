@@ -14,10 +14,10 @@ function getRickAndMorty() {
             infoPersonaje.innerHTML = `
             <h2>${name}</h2>
             <img src="${image}" alt="${image}"/>
-            <p>${status}</p>
-            <p>${species}</p>
-            <p>${gender}</p>
-            <p>${origin.name}</p>
+            <p><strong>Estado:</strong> ${status}</p>
+            <p><strong>Especie:</strong> ${species}</p>
+            <p><strong>Genero:</strong> ${gender}</p>
+            <p><strong>Origen:</strong> ${origin.name}</p>
             `
         }) .catch(error => infoPersonaje.innerHTML = `<p>Imposible acceder al Personaje</p>`)
 
